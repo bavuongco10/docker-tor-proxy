@@ -1,0 +1,14 @@
+version: "3.0"
+  
+services:
+  tor:
+    image: my-tor-proxy-server
+    container_name: my-tor-proxy-server_container
+    build:
+context: .
+dockerfile: Dockerfile
+    ports:
+- 9050:9050
+- 9051:9051
+- 8118:8118
+    restart: always
