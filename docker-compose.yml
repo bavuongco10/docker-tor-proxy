@@ -2,8 +2,8 @@ version: "3.0"
   
 services:
   tor:
-    image: my-tor-proxy-server
-    container_name: my-tor-proxy-server_container
+    image: bavuongco10/docker-tor-proxy:us
+    container_name: docker-tor-proxy
     build:
       context: .
       dockerfile: Dockerfile
